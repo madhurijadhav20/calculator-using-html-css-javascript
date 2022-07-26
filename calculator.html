@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#table
+		{
+			border: 4px solid blue;
+			height: 270px;
+			width: 230px;
+			margin-top: 200px;
+			border-collapse: collapse;
+		}
+
+		}
+		
+		#td
+		{
+			position: fixed;
+
+		}
+		.td1
+		{
+			padding-left: 15px;
+			padding-top: 15px;
+			padding-bottom: 10px;
+			/*padding-right: 10px;*/
+			
+		}
+
+
+		 
+		input
+		{
+			height: 30px;
+			width: 30px;
+			background-color: white;
+			border-radius: 5px;
+			border-color: white; 
+		}
+		#input
+		{
+			height: 30px;
+			width: 90%;
+
+		}
+		#td
+		{
+		 border: 4px solid blue;
+			background-color: white;	
+		}
+
+
+
+	</style>
+	<script type="text/javascript">
+	
+		
+			
+			function fun1(value)
+           {
+         	  document.getElementById("input").value += value;
+           }
+            function clear1()
+            {	  
+         	  
+         	  	document.getElementById("input").value="";
+         	  
+            }
+             function display()
+         	  {
+         	  	var p = document.getElementById("input").value;
+                var q = eval(p);
+                 document.getElementById("input").value = q;
+         	  }
+         	  function fun2()
+         	  {
+         	  	var a=document.getElementById("input").value;
+         	    
+         	  	
+         	  	
+         	  } 
+            
+
+         
+         
+
+		
+
+	</script>
+</head>
+<body bgcolor="tan">
+	<table id="table"align="center" name="table1">
+						<tr><td id="td" colspan="4">
+			<input id="input" type="text" name="text1">
+		</td></tr>
+	
+			<tr>
+				<td class="td1"><input id="t1"  type="button" name="btn1" value="1" onclick="fun1(this.value)"></td>
+				<td class="td1"><input type="button" name="btn2" value="2" onclick="fun1(this.value)"></td>
+				<td class="td1"><input type="button" name="btn3" value="3" onclick="fun1(this.value)"></td>
+				<td class="td1"><input type="button" name="btn4" value="+" onclick="fun1(this.value)"></td>
+				
+
+
+
+
+			</tr>
+			<tr>
+				<td class="td1"><input  type="button" name="btn1" value="4" onclick="fun1(this.value)"></td>
+				<td class="td1"><input type="button" name="btn2" value="5" onclick="fun1(this.value)"></td>
+				<td class="td1"><input type="button" name="btn3" value="6" onclick="fun1(this.value)"></td>
+				<td class="td1"><input type="button" name="btn4" value="-" onclick="fun1(this.value)"></td>
+			</tr>
+			<tr>
+				<td class="td1"><input  type="button" name="btn1" value="7" onclick="fun1(this.value)"></td>
+				<td class="td1"><input type="button" name="btn2" value="8" onclick="fun1(this.value)"></td>
+				<td class="td1"><input type="button" name="btn3" value="9" onclick="fun1(this.value)"></td>
+				<td class="td1"><input type="button" name="btn4" value="*" onclick="fun1(this.value)"></td>
+			</tr>
+			<tr>
+				<td class="td1"><input  type="button" name="btn1" value="0" onclick="fun1(this.value)"></td>
+				<td class="td1"><input type="button" name="btn2" value="/" onclick="fun1(this.value)"></td>
+				<td class="td1"><input type="button" name="btn3" value="c" onclick="clear1()"></td>
+				<td class="td1"><input type="button" name="btn4" value="=" onclick="display()"></td>
+				
+
+
+
+
+			</tr>
+			<tr>
+				<td class="td1"><input type="button" name="btn" value="<-" onclick="fun2()"></td>
+			</tr>
+
+	</table>
+
+</body>
+</html>
